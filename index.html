@@ -14,13 +14,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pets"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Cat name Generator</title>
   </head>
   <body>
     <h1>Cat Names Generator</h1>
 
     <div class="userImputBox">
-      <form>
+      <form id="inputForm">
         <div><label for="input">Descripe your cat: </label></div>
         <input
           type="text"
@@ -34,7 +35,7 @@
         <div class="inputExample">for example: cute, crazy, loving, fluffy</div>
       </form>
     </div>
-    <div class="aiOutput" hidden></div>
+    <div class="aiOutput" id="aiOutput"></div>
     <footer>
       This was coded by
       <a href="https://github.com/TheBraveWhale">Isa van der Laan</a>
