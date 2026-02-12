@@ -13,12 +13,7 @@ function callAI(event) {
   let userInput = document.querySelector("#input");
 
   let apiKey = "fa25b40fcffa301t230o795c80b7e53f";
-  let prompt = `Please generate 2 1 word cat names and 3 2 word cat names based on these keywords provided to descripe the cat:${userInput.value}. please provide only the names following this set up: "<span class="material-symbols-outlined"> pets </span>
-      Catname <br />
-      <span class="material-symbols-outlined"> pets </span>
-      Catname <br />
-      <span class="material-symbols-outlined"> pets </span>
-      Catname"`;
+  let prompt = `Please generate 2 1 word cat names and 3 2 word cat names based on these keywords provided to descripe the cat:${userInput.value}. please provide only the names following this html set up: "catname <br /> catname <br />"`;
   let context = "You are an expert on cat names";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
